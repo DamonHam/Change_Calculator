@@ -3,11 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Write your markup here -->
+    <h1>Change Calculator</h1>
+    <form>
+      <label for="amount-due">How much is due?</label>
+      <input type="text" name="amount-due" id="amount-due" placeholder="0.00" required>
+      <br>
 
-    <!-- Don't forget to add your <script> tag here -->
+      <label for="amount-received">How much was received?</label>
+      <input type="text" name="amount-received" id="amount-received" placeholder="0.00" required>
+      <br>
 
+      <input type="submit" name="submit" id="calculate-change" value="Calculate">
+
+    </form>
+    <div id="change-output">
+      <h2>Change Due:</h2>
+      <p id="Hundreds-output"></p>
+      <p id="Fifties-output"></p>
+      <p id="Twenties-output"></p>
+      <p id="Tens-output"></p>
+      <p id="Fives-output"></p>
+      <p id="Dollars-output"></p>
+      <p id="Quarters-output"></p>
+      <p id="Dimes-output"></p>
+      <p id="Nickels-output"></p>
+      <p id="Pennies-output"></p> 
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
